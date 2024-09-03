@@ -1,5 +1,5 @@
 {
-  "name": "@repo/db",
+  "name": "store",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,16 +9,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "exports": {
-    "./client": "./index.ts"
-  },
-  "devDependencies": {
-    "prisma": "^5.18.0"
-  },
   "dependencies": {
-    "@prisma/client": "^5.18.0"
-  },
-  "prisma": {
-    "seed": "ts-node prisma/seed.ts"
+    "recoil": "^0.7.7"
+  }
+  ,
+  "exports": {
+    "./useBalance": "./src/hooks/useBalance"
 }
 }
